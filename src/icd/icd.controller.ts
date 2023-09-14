@@ -7,7 +7,6 @@ export class IcdController {
 
   @Get()
   async getSymptomList(@Body('symptoms') prompt: string) {
-    // return await this.icdService.getIcdSymptoms(prompt).then((res) => res);
     return await this.icdService.getIcdSymptoms(prompt).then((res) => res);
   }
 }
