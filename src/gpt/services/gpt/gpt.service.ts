@@ -34,6 +34,11 @@ export class GptService {
           {
             role: 'system',
             content:
+              'In the chance field of the json, return a value from 0 to 1 as the percentage. Use the following formula: (1 / number of possible diagnoses) * 100',
+          },
+          {
+            role: 'system',
+            content:
               'If the provided symptoms are not enough to provide a diagnosis, return a message informing the user that the symptoms are not enough to provide a diagnosis.',
           },
           {
